@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore beautiful homes and real estate listings.">
+  <title>DreamHome | Real Estate</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar container" id="topbar">
+<a class="brand" href="#home"><span class="brand-mark">⌂</span> Logo</a>
+<nav aria-label="Main navigation"><a href="#home">Home</a><a href="#properties">⌖ Explore</a><a href="#about">About Us</a><a href="#contact">Contact Us</a></nav>
+<button class="btn" onclick="window.location.href='property.html'">⌕   Request a call</button>
+<button aria-label="Open menu" class="menu-toggle" onclick="toggleMenu()">☰</button>
+</header>
+<main id="home">
+<section class="hero">
+<div><h1>Your Dream Home<br/>Is One Click Away</h1><p>Find a place where your next chapter begins.</p></div>
+<form class="search-panel" onsubmit="searchProperties(event)">
+<div class="field"><label for="looking">Looking for</label><select id="looking"><option>Property type</option><option>House</option><option>Apartment</option><option>Villa</option></select></div>
+<div class="field"><label for="location">Location</label><input id="location" placeholder="City or area"/></div>
+<div class="field"><label for="type">Property status</label><select id="type"><option>Any status</option><option>For Sale</option><option>For Rent</option></select></div>
+<div class="field"><label for="budget">Budget</label><select id="budget"><option>Any budget</option><option>Under $2,000</option><option>$2,000–$5,000</option><option>$5,000+</option></select></div>
+<button class="btn" type="submit">Search</button>
+</form>
+</section>
+<section class="properties" id="properties">
+<div class="container"><div class="section-heading"><h2>Explore Our Properties</h2><p>Enjoy the variety of 100+ different properties in the market!</p></div>
+<div class="property-grid" id="propertyGrid"></div><div class="center"><button class="outline-btn" onclick="window.location.href='property.html'">Load More</button></div>
+</div>
+</section>
+<section class="feature-band" id="about"><div class="container feature-layout">
+<div class="feature-images"><img alt="Bright open living room" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&amp;fit=crop&amp;w=700&amp;q=80"/><img alt="Modern staircase" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&amp;fit=crop&amp;w=500&amp;q=80"/><img alt="Modern interior" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&amp;fit=crop&amp;w=500&amp;q=80"/></div>
+<div class="feature-copy"><h2>Wide Selection Of Properties</h2><p>Discover a home that matches your lifestyle. Browse thoughtfully selected properties, compare details and connect with our property experts.</p><ul><li>Verified listings</li><li>Trusted consultants</li><li>Flexible budgets</li><li>Easy property search</li></ul><div class="center" style="text-align:left"><button class="btn" onclick="window.location.href='property.html'">Explore properties</button></div></div>
+</div></section>
+<section class="why" id="why"><div class="container why-layout"><div><h2>Why Our<br/>Service Is The<br/>Perfect Choice?</h2><div class="why-grid"><div class="why-item"><b>01.<br/>Lorem Ipsum</b><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam nonummy nibh euismod.</p></div><div class="why-item"><b>02.<br/>Lorem Ipsum</b><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam nonummy nibh euismod.</p></div><div class="why-item"><b>03.<br/>Lorem Ipsum</b><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam nonummy nibh euismod.</p></div></div></div><form class="why-form" onsubmit="submitHomeInquiry(event)"><h3>Real Estate Inquiry Form</h3><select required=""><option value="">Inquiry Type</option><option>Buying Property</option><option>Renting Property</option><option>Selling Property</option></select><input placeholder="Name" required=""/><input placeholder="Email" required="" type="email"/><input placeholder="Phone (Optional)" type="tel"/><textarea placeholder="Please Enter Your Message" required=""></textarea><button class="btn" type="submit">Submit</button><p class="notice" id="homeInquiryNotice">Thank you! Your inquiry has been recorded in this demo.</p></form></div></section>
+<section class="featured-small" id="featured"><div class="container"><div class="section-heading"><h2>Featured Listings</h2><p>Browse our wide range of featured properties.</p></div><div class="property-grid" id="featuredGrid"></div><div class="center"><button class="outline-btn" onclick="window.location.href='property.html'">View All Properties</button></div></div></section>
+<section class="testimonials"><div class="container"><div class="section-heading"><h2>Testimonials</h2><p>What Our Clients Say About Us!</p></div><div class="testimonial-grid"><article class="testimonial"><img alt="David Elson" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&amp;fit=crop&amp;w=120&amp;q=80"/><h3>David Elson</h3><small>7th July 2022</small><p>“Very professional broker with great apartments selections”</p></article><article class="testimonial"><img alt="Stephanie Nicol" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&amp;fit=crop&amp;w=120&amp;q=80"/><h3>Stephanie Nicol</h3><small>7th July 2022</small><p>“Very good, they offer the best prices of properties and customer service”</p></article><article class="testimonial"><img alt="Allen Jordan" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&amp;fit=crop&amp;w=120&amp;q=80"/><h3>Allen Jordan</h3><small>7th July 2022</small><p>“Good experience and good customer welcome reflects level of the broker”</p></article></div></div></section>
+</main>
+<footer id="contact"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">⌂</span> Logo</a><span>© 2026 DreamHome. All rights reserved.</span><div class="footer-links"><a href="#about">About</a><a href="#properties">Properties</a><a href="mailto:hello@example.com">Email us</a></div></div></footer>
+<script src="script.js" defer></script>
+</body>
+</html>
